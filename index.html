@@ -1,22 +1,25 @@
-<html>
-<link rel="stylesheet" href="css/style.css" />
-<meta charset="UTF-8" />
+<!DOCTYPE html>
+
+<html lang="fr">
 <head>
-	<title>Séries US</title>
-
-
+  <meta charset="utf-8">
+  <title>Datavisualisation </title>
+  
+  <script src="script.js"></script>
+   <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+   <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+   <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Allura|Handlee|Neucha|Permanent+Marker&display=swap" rel="stylesheet">
 </head>
-<body class="fond">
-<h1 class="titre">Test écriture en html page index</h1>
-<p>Voici la liste des séries les plus connues :
-</p> 
-<ul>
-<li><a href="page_got.html" title="Pour en savoir plus !">Game of Thrones</a></li>
-<li><a href="page_cdp.html" title="Pour en savoir plus !">Casa de Papel</a></li>
-<li><a href="page_bb.html" title="Pour en savoir plus !">Breaking bad</a></li>
-<li><a href="page_h.html" title="Pour en savoir plus !">Homeland</a></li>
-<li><a href="page_wd.html" title="Pour en savoir plus !">Walking Dead</a></li>
-</ul>
-
+<body>
+	<div id="banniere"><h1>Petite Histoire Française de la Datavisualisation</h1></div>
+	<div id='timeline-embed' style="width: 100%; height: 600px"></div>
+	<script type="text/javascript">timeline = new TL.Timeline('timeline-embed',
+          'https://docs.google.com/spreadsheets/d/1lLcGKwXOfQs_2ztJUYpK3qjzEC8fvZ-t6xsgvpeBohc/edit#gid=1835642657');
+      </script>
 </body>
 </html>
